@@ -6,9 +6,9 @@ def home(request):
 
     return render(request, 'core/pagina-home.html')
 
-def inicioSesion(request):
-
 #---------------------INICIO/REGISTRO-----------------
+
+def inicioSesion(request):
 
     return render(request, 'core/inicio-sesion.html')
 
@@ -17,6 +17,10 @@ def RegistroSesion(request):
     return render(request, 'core/registro-sesion.html')
 
 #-----------------------MARCAS-------------------------
+
+def Marcas(request):
+
+    return render(request, 'core/Marcas.html')
 
 def CHEVROLET(request):
 
@@ -39,3 +43,10 @@ def JEEP(request):
 def marcas(request):
     contexto = {"nombreM":"Manchas2", "edadM":"2 años","colorP":"Castaño","imagenM":"/static/core/img/pet1.jpeg"}
     return render(request,'core/mascota.html',contexto)
+
+
+#-------------------------mapa-api------------------------
+
+def mapa(request):
+
+    return render(request, 'core/mapa.html')
