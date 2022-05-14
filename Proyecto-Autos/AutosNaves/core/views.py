@@ -50,3 +50,63 @@ def marcas(request):
 def mapa(request):
 
     return render(request, 'core/mapa.html')
+
+
+#----------------------AUTOS Y CAMIONETAS ---------------
+
+#--Chevrolet--
+
+def camaro(request):
+
+    return render(request, 'core/ChevroletCamaro.html')
+
+
+def onix(request):
+
+    return render(request, 'core/ChevroletOnixSedan.html')
+
+def sail(request):
+
+    return render(request, 'core/ChevroletSail.html')
+
+#--Ford--
+
+def territory(request):
+
+    return render(request, 'core/FordAllNewTerritory.html')
+
+def focus(request):
+
+    return render(request, 'core/FordFocus.html')
+
+def raptor(request):
+
+    return render(request, 'core/FordRaptor.html')
+
+#--Hyundai--
+
+def accent(request):
+
+    return render(request, 'core/HyundaiAccent.html')
+
+def tucson(request):
+
+    return render(request, 'core/HyundaiTucson.html')
+
+def veloster(request):
+
+    return render(request, 'core/HyundaiVeloster.html')
+
+#--Jeep--
+
+def cherokee(request):
+
+    return render(request, 'core/JeepCherokee.html')
+
+def gladiator(request):
+
+    return render(request, 'core/JeepGladiator.html')
+
+def wrangler(request):
+
+    return render(request, 'core/JeepWrangler.html')

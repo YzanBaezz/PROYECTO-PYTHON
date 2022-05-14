@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    {% load static %}
+  {% load static %}
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chevrolet</title>
+    <title>Camaro</title>
 
     <link rel="shortcut icon" href="{% static 'core/logo/Logocompañia.png' %}" type="image/x-icon">
   
@@ -20,7 +20,7 @@
   
     <script src="https://kit.fontawesome.com/d1560c34b9.js" crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" type="text/css" href="{% static 'core/css/marcas.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'core/css/variables.css' %}">
 </head>
 <body>
 
@@ -62,103 +62,96 @@
         </div>
         </div>
     </nav>
-    
-    <!-- agregar un margin a los logos de las marcas para que no se pegen a la navbar-->
-    
-      <div class="container">
-        <div class="img4">
-          <img src="img/Chevrolet/chevrolet-logo-v2.png" alt="" >
+
+    <!-- agregar un margin a la img del camaro para que no se pegen a la navbar-->
+    <div class="container-fluid">
+        <img src="img/Chevrolet/camaro-2500x1000.jpg" alt="Hola" width="100%" height="100%"  class="img-fluid"> <!-- añadir al css los width y height-->
+      </div>
+  
+      <div class="container__resp">
+        <div class="carta__foto">
+          <figure>
+            <img src="img/Chevrolet Camaro/motor.png" class="especificacion">
+          </figure>
+          <div class="titulo__esp">
+            <h3>6.2</h3>
+          </div>
+        </div>
+        <div class="carta__foto">
+          <figure>
+            <img src="img/Chevrolet Camaro/02-quantum-why-buy_8-velocidades.png" class="especificacion">
+          </figure>
+          <div class="titulo__esp">
+            <h3>CAJA AUTO</h3>
+          </div>
+        </div>
+        <div class="carta__foto">
+          <figure>
+            <img src="img/Chevrolet Camaro/de0-100.png" class="especificacion">
+          </figure>
+          <div class="titulo__esp">
+            <h3>0 A 100 KM/H</h3>
+          </div>
+        </div>
+        <div class="carta__foto">
+          <figure>
+            <img src="img/Chevrolet Camaro/04-quantum-why-buy-onstar.png" class="especificacion">
+          </figure>
+          <div class="titulo__esp">
+            <h3>Servicio</h3>
+          </div>
         </div>
       </div>
-    
-      <!-- agregar un margin para que no se pege a las cartas--> 
-    
-      <div class="container">
-        <div class="container1">
-        <div class="body">
-          <div class="card">
+  
+  
+      
+        <div class="container">
+          <h1>Camaro</h1>
+            <p>Un facelift al performance</p>
+            <p>El nuevo Camaro fue rediseñado de principio a fin. Su línea ha evolucionado para verse aún mas estilizada, pero eso no es todo, incluye tecnología, performance y un manejo superior. Aceléralo hasta el fondo y descubre lo que significa la adrenalina.</p>
+  
+        <div class="ratio ratio-16x9">
+          <iframe src="https://www.youtube.com/embed/0ZzMcwdb2W0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        </div>
+
+    <!-- footer -->
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+          <div class="box">
             <figure>
-              <img src="img/Chevrolet Camaro/camaro.jpg" alt="Camaro" class="img-fluid">
+              <a href="http://127.0.0.1:8000">
+                <img src="{% static 'core/img/LOGO/Logocompañia.png' %}" alt="LOGO" class="img-fluid">
+              </a>
             </figure>
-            <div class="contenido">
-              <h3>Camaro</h3>
-              <p>El nuevo Camaro fue rediseñado de principio a fin. Su línea ha evolucionado para verse aún mas estilizada..</p>
-              <a href="http://127.0.0.2:5500/chevrolet%20camaro%202020.html"> Ver más</a>
-            </div>
           </div>
-        </div>
-        </div>
-        <div class="container1">
-        <div class="body">
-          <div class="card">
-            <figure>
-              <img src="img/Chevrolet Sedan Onix/chevrolet-onix-plus-rojo.png" alt="Onix" class="img-fluid">
-            </figure>
-            <div class="contenido">
-              <h3>Onix Sedán</h3>
-              <p>El Onix Sedán viene con una serie de características que lo consolidan como el más innovador de su clase.</p>
-              <a href="http://127.0.0.2:5500/chevrolet%20onix%20sedan%202021.html"> Ver más</a>
-            </div>
+          <div class="box">
+            <h2>SOBRE NOSOTROS</h2>
+            <p> -Autos Nuevos y Usados</p>
+            <p> -Atencion Al Cliente</p>
+            <p> -Contactanos: <br> +56966263113</p>
           </div>
-        </div>
-        </div>
-        <div class="container1">
-        <div class="body">
-          <div class="card">
-            <figure>
-              <img src="img/Chevrolet Sail/chevrolet-chile-sail-colorizer-blanco.png" alt="Sail" class="img-fluid">
-            </figure>
-            <div class="contenido">
-              <h3>Sail</h3>
-              <p>Cuando combinas diseño, tecnología, confort y seguridad en un mismo auto...</p>
-              <a href="http://127.0.0.2:5500/chevrolet%20sail%202022.html"> Ver más</a>
+            
+          <div class="box">
+            <h2>Nuestras redes sociales:</h2>
+            <div class="red-social">
+              <a href="#" class="fa fa-facebook"></a>
+              <a href="#" class="fa fa-instagram"></a>
+              <a href="#" class="fa fa-twitter"></a>
             </div>
-          </div>
-        </div>
-        </div>
-      </div>
-    
-    
-    
-    
-    
-      <!-- footer -->
-        <footer class="pie-pagina">
-          <div class="grupo-1">
+  
             <div class="box">
-              <figure>
-                <a href="http://127.0.0.1:8000">
-                  <img src="{% static 'core/img/LOGO/Logocompañia.png' %}" alt="LOGO" class="img-fluid">
-                </a>
-              </figure>
-            </div>
-            <div class="box">
-              <h2>SOBRE NOSOTROS</h2>
-              <p> -Autos Nuevos y Usados</p>
-              <p> -Atencion Al Cliente</p>
-              <p> -Contactanos: <br> +56966263113</p>
-            </div>
-              
-            <div class="box">
-              <h2>Nuestras redes sociales:</h2>
-              <div class="red-social">
-                <a href="#" class="fa fa-facebook"></a>
-                <a href="#" class="fa fa-instagram"></a>
-                <a href="#" class="fa fa-twitter"></a>
-              </div>
-    
-              <div class="box">
-                <h2>Donde encontrarnos:</h2>
-                <div class="ubicacion-local">
-                  <a href="http://127.0.0.2:5500/mapa-api.html" class="fa-solid fa-location-dot"></a>
-                </div>
+              <h2>Donde encontrarnos:</h2>
+              <div class="ubicacion-local">
+                <a href="http://127.0.0.2:5500/mapa-api.html" class="fa-solid fa-location-dot"></a>
               </div>
             </div>
           </div>
-          <div class="grupo-2">
-            <small>&copy; 2022 <b>Autos Naves</b> - Todos los derechos reservados</small>
-          </div>
-        </footer>
+        </div>
+        <div class="grupo-2">
+          <small>&copy; 2022 <b>Autos Naves</b> - Todos los derechos reservados</small>
+        </div>
+      </footer>
     
 </body>
 </html>
