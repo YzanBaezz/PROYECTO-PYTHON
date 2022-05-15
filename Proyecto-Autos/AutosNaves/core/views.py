@@ -6,15 +6,18 @@ def home(request):
 
     return render(request, 'core/pagina-home.html')
 
-#---------------------INICIO/REGISTRO-----------------
+#---------------------INICIO/REGISTRO/PerfilUsuario-----------------
 
-def inicioSesion(request):
+def InicioSesion(request):
 
-    return render(request, 'core/inicio-sesion.html')
+    return render(request, 'core/InicioSesion.html')
 
 def RegistroSesion(request):
 
-    return render(request, 'core/registro-sesion.html')
+    return render(request, 'core/RegistroSesion.html')
+
+def PerfilUsuario(request):
+    return render(request, 'core/PerfilUsuario.html')
 
 #-----------------------MARCAS-------------------------
 
@@ -110,3 +113,29 @@ def gladiator(request):
 def wrangler(request):
 
     return render(request, 'core/JeepWrangler.html')
+
+# Administrador
+
+def admin(request):
+    return render(request, 'core/admin.html')
+
+# Agregar Autos
+
+def AgregarAutos(request):
+    return render(request, 'core/AgregarAutos.html')
+
+# Seccion Autos
+
+def Autos(request):
+    return render(request, 'core/Autos.html')
+
+# Seccion Camionetas
+
+def Camionetas(request):
+    return render(request, 'core/Camionetas.html')
+
+def AtencionCliente(request):
+    return render(request, 'core/AtencionCliente.html')
+
+def EditarPerfil(request):
+    return render(request, 'core/EditarPerfil.html')
