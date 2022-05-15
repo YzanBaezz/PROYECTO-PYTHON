@@ -139,3 +139,9 @@ def AtencionCliente(request):
 
 def EditarPerfil(request):
     return render(request, 'core/EditarPerfil.html')
+
+def AutosNuevos(request):
+    return render(request, 'core/AutosNuevos.html')
+
+def AutosSemiNuevos(request):
+    return render(request, 'core/AutosSemiNuevos.html')
