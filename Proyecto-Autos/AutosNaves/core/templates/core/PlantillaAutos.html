@@ -1,0 +1,126 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block titulo %}
+    {% endblock titulo %}
+
+    <link rel="shortcut icon" href="{% static 'core/logo/Logocompañia.png' %}" type="image/x-icon">
+  
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+  
+    <script src="https://kit.fontawesome.com/d1560c34b9.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="text/css" href="{% static 'core/css/especificacion.css' %}">
+</head>
+<body>
+
+<div class="container-fluid">
+    {% block img %}
+    {% endblock img%}
+</div>
+<div class="container__resp">
+    <div class="carta__foto">
+    <figure>
+        {% block img1 %}
+        {% endblock img1 %}
+    </figure>
+    <div class="titulo__esp">
+        {% block texto1%}
+        {% endblock texto1%}
+    </div>
+    </div>
+    <div class="carta__foto">
+    <figure>
+        {% block img2 %}
+        {% endblock img2 %}
+    </figure>
+    <div class="titulo__esp">
+        {% block texto2%}
+        {% endblock texto2 %}
+    </div>
+    </div>
+    <div class="carta__foto">
+    <figure>
+        {% block img3 %}
+        {% endblock img3 %}
+    </figure>
+    <div class="titulo__esp">
+        {% block texto3%}
+        {% endblock texto3%}
+    </div>
+    </div>
+    <div class="carta__foto">
+    <figure>
+        {% block img4 %}
+        {% endblock img4 %}
+    </figure>
+    <div class="titulo__esp">
+        {% block texto4%}
+        {% endblock texto4%}
+    </div>
+    </div>
+</div>
+    <div class="container">
+        {% block nombre %}
+        {% endblock nombre %}
+        {% block datosA %}
+        {% endblock datosA %}
+        {% block datosB %}
+        {% endblock datosB %}
+
+
+    <div class="ratio ratio-16x9">
+        {% block videoA %}
+        {% endblock videoA %}
+    </div>
+    </div>
+
+    <section id="galeria">
+        <div class="text-center">
+            {% block galeriaN %}
+            {% endblock galeriaN %}
+        </div>
+    
+    <div class="container">
+        <div class="row">
+        <div class="col-lg-4">
+            {% block galeriaimg1 %}
+            {% endblock galeriaimg1 %}
+        </div>
+        <div class="col-lg-4">
+            {% block galeriaimg2 %}
+            {% endblock galeriaimg2 %}
+        </div>
+        <div class="col-lg-4">
+            {% block galeriaimg3 %}
+            {% endblock galeriaimg3 %}
+        </div>
+        <div class="col-lg-4">
+            {% block galeriaimg4 %}
+            {% endblock galeriaimg4 %}
+        </div>
+        <div class="col-lg-4">
+            {% block galeriaimg5 %}
+            {% endblock galeriaimg5 %}
+        </div>
+        <div class="col-lg-4">
+            {% block galeriaimg6 %}
+            {% endblock galeriaimg6 %}
+        </div>
+        </div>
+    </div>
+    </section>  
+
+</body>
+</html>
