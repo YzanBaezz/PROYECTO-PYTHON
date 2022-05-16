@@ -483,3 +483,7 @@ figure{
         margin-left: 20px;
     }
 }
+
+.rounded-pill{
+    width: 55px;
+}

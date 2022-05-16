@@ -17,6 +17,7 @@ def RegistroSesion(request):
     return render(request, 'core/RegistroSesion.html')
 
 def PerfilUsuario(request):
+
     return render(request, 'core/PerfilUsuario.html')
 
 #-----------------------MARCAS-------------------------
@@ -43,9 +44,23 @@ def JEEP(request):
 
 #-----------------------PLANTILLAS------------------------
 
-def marcas(request):
-    contexto = {"nombreM":"Manchas2", "edadM":"2 años","colorP":"Castaño","imagenM":"/static/core/img/pet1.jpeg"}
-    return render(request,'core/mascota.html',contexto)
+def camaro(request):
+    contexto = {"nombreA":"Camaro", "img":"/static/core/img/ChevroletCamaro/Baner-camaro.jpg"
+                ,"img1":"/static/core/img/ChevroletCamaro/motor-camaro.png","texto1":"6.2"
+                ,"img2":"/static/core/img/ChevroletCamaro/caja-camaro.png","texto2":"CAJA AUTO"
+                ,"img3":"/static/core/img/ChevroletCamaro/velocimetro-camaro.png","texto3":"0 A 100 KM/H"
+                ,"img4":"/static/core/img/ChevroletCamaro/certificacion-camaro.png","texto4":"Servicio"
+                ,"galeriaimg1":"/static/core/img/ChevroletCamaro/galeria1.jpg"
+                ,"galeriaimg2":"/static/core/img/ChevroletCamaro/galeria2.jpg"
+                ,"galeriaimg3":"/static/core/img/ChevroletCamaro/galeria3.jpg"
+                ,"galeriaimg4":"/static/core/img/ChevroletCamaro/galeria4.jpg"
+                ,"galeriaimg5":"/static/core/img/ChevroletCamaro/galeria5.jpg"
+                ,"galeriaimg6":"/static/core/img/ChevroletCamaro/galeria6.jpg"
+                ,"nombreG":"Galeria de Imagenes"
+                ,"datosA":"Un facelift al performance." 
+                ,"datosB":"El nuevo Camaro fue rediseñado de principio a fin. Su línea ha evolucionado para verse aún mas estilizada, pero eso no es todo, incluye tecnología, performance y un manejo superior. Aceléralo hasta el fondo y descubre lo que significa la adrenalina."
+                ,"videoA":"https://www.youtube.com/embed/0ZzMcwdb2W0"}
+    return render(request,'core/ChevroletCamaro.html',contexto)
 
 
 #-------------------------mapa-api------------------------
@@ -58,10 +73,6 @@ def mapa(request):
 #----------------------AUTOS Y CAMIONETAS ---------------
 
 #--Chevrolet--
-
-def camaro(request):
-
-    return render(request, 'core/ChevroletCamaro.html')
 
 
 def onix(request):
