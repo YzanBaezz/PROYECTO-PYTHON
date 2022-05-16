@@ -206,6 +206,13 @@ main {
     }
 }
 
+@media screen  and (max-width: 320px) {
+    .formulario__mensaje p {
+        font-size: 9px;
+        font-weight: 500;
+    }
+}
+
 
 .ini{
     display: flex;

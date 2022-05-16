@@ -152,7 +152,7 @@ main {
     font-size: 13px;
     margin-bottom: 0;
     display: none;
-   
+
 }
 .solicitud__input-error-activo {
     display: block;
@@ -216,21 +216,23 @@ main {
     }
 }
 
-@media screen  and (max-width: 420px) {
-    .solicitud__mensaje p {
-        font-size: 11px;
+@media screen  and (max-width: 390px) {
+    .formulario__mensaje p {
+        font-size: 12px;
     }
 }
 
-@media screen  and (max-width: 390px) {
-    .solicitud__mensaje p {
-        font-size: 10px;
+@media screen  and (max-width: 320px) {
+    .formulario__mensaje p {
+        font-size: 9px;
+        font-weight: 500;
     }
 }
 
 @media screen  and (max-width: 280px) {
     .solicitud__mensaje p {
         font-size: 7px;
+        font-weight: 500;
     }
 }
 @media screen  and (max-width: 280px) {
