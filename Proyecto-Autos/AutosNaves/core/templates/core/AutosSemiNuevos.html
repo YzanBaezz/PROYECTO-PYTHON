@@ -24,36 +24,35 @@
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
         <ul class="navbar-nav">
         <li class="nav-item">
-            <a class="nav-link fondoletrasmenu" href="http://127.0.0.1:8000/Marcas/">Autos Nuevos</a>
+            <a class="nav-link fondoletrasmenu" href="http://127.0.0.1:8000/AutosNuevos/">Autos Nuevos</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link fondoletrasmenu" href="http://127.0.0.1:8000/Marcas/">Autos Semi-Nuevos</a>
+            <a class="nav-link fondoletrasmenu" href="http://127.0.0.1:8000/AutosSemiNuevos/">Autos Semi-Nuevos</a>
         </li>
         <li class="nav-item">
             <a class="nav-link fondoletrasmenu" href="http://127.0.0.1:8000/Marcas/">Marcas Disponibles</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link fondoletrasmenu" href="http://127.0.0.1:8000/Marcas/">Atencion al Cliente</a>
+            <a class="nav-link fondoletrasmenu" href="http://127.0.0.1:8000/AtencionCliente/">Atencion al Cliente</a>
         </li>    
         <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Tipos</a>
             <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="http://127.0.0.1:8000/Marcas/">Autos</a></li>
-            <li><a class="dropdown-item" href="http://127.0.0.1:8000/Marcas/">Camionetas </a></li>  
+            <li><a class="dropdown-item" href="http://127.0.0.1:8000/Autos/">Autos</a></li>
+            <li><a class="dropdown-item" href="http://127.0.0.1:8000/Camionetas/">Camionetas </a></li>  
             </ul>
         </li>
         <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Cuenta</a>
             <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="http://127.0.0.1:8000/Marcas/">Registro</a></li>
-            <li><a class="dropdown-item" href="http://127.0.0.1:8000/Marcas/">Inicio Sesión </a></li>  
+            <li><a class="dropdown-item" href="http://127.0.0.1:8000/RegistroSesion/">Registro</a></li>
+            <li><a class="dropdown-item" href="http://127.0.0.1:8000/InicioSesion/">Inicio Sesión </a></li>  
             </ul>
         </li>
         </ul>
     </div>
     </div>
 </nav>
-
 
     <div class="container-fluid">
         <h2 class="texto"> AUTOS Y CAMIONETAS SEMI-NUEVOS</h2>
@@ -63,47 +62,47 @@
     <div class="container">
       <div class="row">
         <div class="card">
-          <img src="img/Jeep Cherokee/kisspng-jeep-compact-car-compact-sport-utility-vehicle-jeep-brunei-vehicle-compass-5bab9f98c1bcd8.4210524115379741687936.png" alt="Cherokee">
+          <img src="{% static 'core/img/JeepCherokee/cheroke-seminuevo.png' %}" alt="Cherokee">
           <h2>Jeep Cherokee</h2>
           <p>Precio:$46.990.000</p>
-            <a href="http://127.0.0.2:5500/jeep%20cherokee%202020.html" class="btn btn-danger">Mas informacion</a>
+            <a href="http://127.0.0.1:8000/JeepCherokee" class="btn btn-danger">Mas informacion</a>
         </div>
         <div class="card">
-          <img src="img/Hyundai Veloster/descarga-1-4-removebg-preview.png" alt="Veloster">
+          <img src="{% static 'core/img/HyundaiVeloster/veloster-marca.png' %}" alt="Veloster">
           <h2>Hyundai Veloster</h2>
           <p>Precio:$27.490.000</p>
-            <a href="http://127.0.0.2:5500/hyundai%20veloster%202021.html" class="btn btn-danger">Mas informacion</a>
+            <a href="http://127.0.0.1:8000/HyundaiVeloster" class="btn btn-danger">Mas informacion</a>
         </div>
         <div class="card">
-          <img src="img/Ford Focus/ford-focusss-removebg-preview.png" alt="Focus">
+          <img src="{% static 'core/img/FordFocus/focus-marca.png' %}" alt="Focus">
           <h2>Ford Focus</h2>
           <p>Precio:$12.990.000.</p>
-            <a href="http://127.0.0.2:5500/ford%20focus%202021.html" class="btn btn-danger">Mas informacion</a>
+            <a href="http://127.0.0.1:8000/FordFocus" class="btn btn-danger">Mas informacion</a>
         </div>
       <div class="card">
-          <img src="img/Ford Raptor 2018/1416685587-removebg-preview.png" alt="Raptor">
+          <img src="{% static 'core/img/FordRaptor/raptor-seminuevo.png' %}" alt="Raptor">
           <h2>Ford Raptor</h2>
           <p>Precio:$55.900.000</p>
-            <a href="http://127.0.0.2:5500/ford%20raptor%202018.html" class="btn btn-danger">Mas informacion</a>
+            <a href="http://127.0.0.1:8000/FordRaptor" class="btn btn-danger">Mas informacion</a>
         </div>
     
         <div class="card">
-          <img src="img/Ford Territorry/territory.png" alt="Territory">
+          <img src="{% static 'core/img/FordTerritory/Territory-seminuevo.png' %}" alt="Territory">
           <h2>Ford Territory</h2>
           <p>Precio:$22.090.000</p>
-            <a href="http://127.0.0.2:5500/ford%20All%20New%20territory%202021.html" class="btn btn-danger">Mas informacion</a>
+            <a href="http://127.0.0.1:8000/FordAllNewTerritory" class="btn btn-danger">Mas informacion</a>
         </div>
         <div class="card">
-          <img src="img/Chevrolet/chevrolet_camaro_1-removebg-preview.png" alt="Camaro">
+          <img src="{% static 'core/img/ChevroletCamaro/camaro-seminuevo.png' %}" alt="Camaro">
           <h2>Camaro</h2>
           <p>Precio:$45.000.000</p>
-            <a href="http://127.0.0.2:5500/chevrolet%20camaro%202020.html" class="btn btn-danger">Mas informacion</a>
+            <a href="http://127.0.0.1:8000/ChevroletCamaro" class="btn btn-danger">Mas informacion</a>
         </div>
         <div class="card">
-          <img src="img/Chevrolet Sedan Onix/onix-seminuevo.png" alt="onix">
+          <img src="{% static 'core/img/ChevroletSedan/onix-seminuevo.png' %}" alt="onix">
           <h2>Chevrolet Sedan</h2>
           <p>Precio:$10.590.000</p>
-            <a href="http://127.0.0.2:5500/chevrolet%20onix%20sedan%202021.html" class="btn btn-danger">Mas informacion</a>
+            <a href="http://127.0.0.1:8000/ChevroletOnixSedan" class="btn btn-danger">Mas informacion</a>
         </div>
       </div>
     </div>

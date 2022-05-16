@@ -26,29 +26,29 @@
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
         <ul class="navbar-nav">
         <li class="nav-item">
-            <a class="nav-link fondoletrasmenu" href="http://127.0.0.1:8000/Marcas/">Autos Nuevos</a>
+            <a class="nav-link fondoletrasmenu" href="http://127.0.0.1:8000/AutosNuevos/">Autos Nuevos</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link fondoletrasmenu" href="http://127.0.0.1:8000/Marcas/">Autos Semi-Nuevos</a>
+            <a class="nav-link fondoletrasmenu" href="http://127.0.0.1:8000/AutosSemiNuevos/">Autos Semi-Nuevos</a>
         </li>
         <li class="nav-item">
             <a class="nav-link fondoletrasmenu" href="http://127.0.0.1:8000/Marcas/">Marcas Disponibles</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link fondoletrasmenu" href="http://127.0.0.1:8000/Marcas/">Atencion al Cliente</a>
+            <a class="nav-link fondoletrasmenu" href="http://127.0.0.1:8000/AtencionCliente/">Atencion al Cliente</a>
         </li>    
         <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Tipos</a>
             <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="http://127.0.0.1:8000/Marcas/">Autos</a></li>
-            <li><a class="dropdown-item" href="http://127.0.0.1:8000/Marcas/">Camionetas </a></li>  
+            <li><a class="dropdown-item" href="http://127.0.0.1:8000/Autos/">Autos</a></li>
+            <li><a class="dropdown-item" href="http://127.0.0.1:8000/Camionetas/">Camionetas </a></li>  
             </ul>
         </li>
         <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Cuenta</a>
             <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="http://127.0.0.1:8000/Marcas/">Registro</a></li>
-            <li><a class="dropdown-item" href="http://127.0.0.1:8000/Marcas/">Inicio Sesión </a></li>  
+            <li><a class="dropdown-item" href="http://127.0.0.1:8000/RegistroSesion/">Registro</a></li>
+            <li><a class="dropdown-item" href="http://127.0.0.1:8000/InicioSesion/">Inicio Sesión </a></li>  
             </ul>
         </li>
         </ul>
@@ -63,34 +63,34 @@
     <div class="container">
       <div class="row">
         <div class="card">
-                <img src="img/Hyundai Tucson/20200914-HYUNDAI-TUCSON-2022-01-removebg-preview.png" alt="TUCSON">
+                <img src="{% static 'core/img/HyundaiTucson/Tucson-marca.png' %}" alt="TUCSON">
                 <h2>Hyundai Tucson</h2>
                 <p>Precio:$20.290.000</p>
-                    <a href="http://127.0.0.2:5500/hyundai%20tucson%202022.html" class="btn btn-danger">Mas informacion</a>
+                    <a href="http://127.0.0.1:8000/HyundaiTucson" class="btn btn-danger">Mas informacion</a>
             </div>
         <div class="card">
-                <img src="img/Jeep Gladiator/jeep-gladiator-versiones-configuracion-y-ficha-tecnica-para-argentina-removebg-preview.png" alt="Gladiator">
+                <img src="{% static 'core/img/JeepGladiator/gladiator-nuevo.png' %}" alt="Gladiator">
                 <h2>Jeep Gladiator</h2>
                 <p>Precio:$46.990.000</p>
-                    <a href="http://127.0.0.2:5500/jeep%20gladiator%20Rubicon%202022.html" class="btn btn-danger">Mas informacion</a>
+                    <a href="http://127.0.0.1:8000/JeepGladiator" class="btn btn-danger">Mas informacion</a>
             </div>
         <div class="card">
-                <img src="img/Jeep Wrangler/5a2964a7ab3ef7.3818321015126621837015.png" alt="Wrangler">
+                <img src="{% static 'core/img/JeepWrangler/wrangler-nuevo.png' %}" alt="Wrangler">
                 <h2>Jeep Wrangler</h2>
                 <p>Precio:$50.990.000</p>
-                    <a href="http://127.0.0.2:5500/jeep%20wrangler%20Unlimited%20Rubricon%202021.html" class="btn btn-danger">Mas informacion</a>
+                    <a href="http://127.0.0.1:8000/JeepWrangler" class="btn btn-danger">Mas informacion</a>
             </div>
         <div class="card">
-                <img src="img/Hyundai Accent 2022/2022-accent-se-olympus-silver-centered-browse-hero_Browse.png" alt="Accent">
+                <img src="{% static 'core/img/HyundaiAccent/accent-nuevo.png' %}" alt="Accent">
                 <h2>Hyundai Accent</h2>
                 <p>Precio:$12.090.000</p>
-                    <a href="http://127.0.0.2:5500/hyundai%20accent%202022.html" class="btn btn-danger">Mas informacion</a>
+                    <a href="http://127.0.0.1:8000/HyundaiTucson" class="btn btn-danger">Mas informacion</a>
             </div>
         <div class="card">
-                <img src="img/Chevrolet Sail/sail-nuevo.png" alt="Sail">
+                <img src="{% static 'core/img/ChevroletSail/sail-nuevo.png' %}" alt="Sail">
                 <h2>Chevrolet Sail</h2>
                 <p>Precio:$7.690.000</p>
-                    <a href="http://127.0.0.2:5500/chevrolet%20sail%202022.html" class="btn btn-danger">Mas informacion</a>
+                    <a href="http://127.0.0.1:8000/ChevroletSail" class="btn btn-danger">Mas informacion</a>
             </div>
       </div>
     </div>
