@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    {% load static %}
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -65,41 +66,41 @@
       <div class="container">
         <div class="row">
           <div class="card">
-            <img src="img/Hyundai Tucson/20200914-HYUNDAI-TUCSON-2022-01-removebg-preview.png" alt="Hyundaitucson">
+            <img src="{% static 'core/img/HyundaiTucson/Tucson-marca.png' %}" alt="Hyundaitucson">
             <h2>Hyundai Tucson</h2>
             <p>Precio:$20.290.000</p>
-              <a href="http://127.0.0.2:5500/hyundai%20tucson%202022.html" class="btn btn-danger">Mas informacion</a>
+              <a href="http://127.0.0.1:8000/HyundaiTucson"  class="btn btn-danger">Mas informacion</a>
           </div>
           <div class="card">
-            <img src="img/Jeep Gladiator/jeep-gladiator-versiones-configuracion-y-ficha-tecnica-para-argentina-removebg-preview.png" alt="Jeepgladiator">
+            <img src="{% static 'core/img/JeepGladiator/gladiator-nuevo.png' %}" alt="Jeepgladiator">
             <h2>Jeep Gladiator</h2>
             <p>Precio:$46.990.000</p>
-            <a href="http://127.0.0.2:5500/jeep%20gladiator%20Rubicon%202022.html" class="btn btn-danger">Mas informacion</a>
+            <a href="http://127.0.0.1:8000/JeepGladiator"  class="btn btn-danger">Mas informacion</a>
           </div>
           <div class="card">
-            <img src="img/Jeep Cherokee/kisspng-jeep-compact-car-compact-sport-utility-vehicle-jeep-brunei-vehicle-compass-5bab9f98c1bcd8.4210524115379741687936.png" alt="Jeepcherokee">
+            <img src="{% static 'core/img/JeepCherokee/cheroke-seminuevo.png' %}" alt="Jeepcherokee">
             <h2>Jeep Cherokee</h2>
             <p>Precio:$46.990.000</p>
-            <a href="http://127.0.0.2:5500/jeep%20cherokee%202020.html" class="btn btn-danger">Mas informacion</a>
+            <a href="http://127.0.0.1:8000/JeepCherokee"  class="btn btn-danger">Mas informacion</a>
           </div>
           
             <div class="card">
-              <img src="img/Jeep Wrangler/5a2964a7ab3ef7.3818321015126621837015.png" alt="Jeepwrangler">
+              <img src="{% static 'core/img/JeepWrangler/wrangler-nuevo.png' %}" alt="Jeepwrangler">
               <h2>Jeep Wrangler</h2>
               <p>Precio:$50.990.000</p>
-              <a href="http://127.0.0.2:5500/jeep%20wrangler%20Unlimited%20Rubricon%202021.html" class="btn btn-danger">Mas informacion</a>
+              <a href="http://127.0.0.1:8000/JeepWrangler"  class="btn btn-danger">Mas informacion</a>
             </div>
             <div class="card">
-              <img src="img/Ford Raptor 2018/1416685587-removebg-preview.png" alt="Fordraptor">
+              <img src="{% static 'core/img/FordRaptor/raptor-seminuevo.png' %}" alt="Fordraptor">
               <h2>Ford Raptor</h2>
               <p>Precio:$55.900.000</p>
-              <a href="http://127.0.0.2:5500/ford%20raptor%202018.html" class="btn btn-danger">Mas informacion</a>
+              <a href="http://127.0.0.1:8000/FordRaptor"  class="btn btn-danger">Mas informacion</a>
             </div>
             <div class="card">
-              <img src="img/Ford Territorry/territory.png" alt="Fordterritory">
+              <img src="{% static 'core/img/FordTerritory/Territory-seminuevo.png' %}" alt="Fordterritory">
               <h2>Ford Territory</h2>
               <p>Precio:$22.090.000</p>
-              <a href="http://127.0.0.2:5500/ford%20All%20New%20territory%202021.html" class="btn btn-danger">Mas informacion</a>
+              <a href="http://127.0.0.1:8000/FordAllNewTerritory"  class="btn btn-danger">Mas informacion</a>
             </div>
           </div>
         </div>
