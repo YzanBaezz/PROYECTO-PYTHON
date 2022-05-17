@@ -73,10 +73,13 @@ const validarPassword2 = () => {
         document.getElementById(`grupo__password2`).classList.add('editperfil__grupo-incorrecto');
         document.getElementById(`grupo__password2`).classList.remove('editperfil__grupo-correcto');
         document.querySelector(`#grupo__password2 .editperfil__input-error`).classList.add('editperfil__input-error-activo');
+        campos['password'] = false;
     } else {
         document.getElementById(`grupo__password2`).classList.remove('editperfil__grupo-incorrecto');
         document.getElementById(`grupo__password2`).classList.add('editperfil__grupo-correcto');
         document.querySelector(`#grupo__password2 .editperfil__input-error`).classList.remove('editperfil__input-error-activo');
+        campos['password'] = true;
+
 
     }
 }
@@ -88,7 +91,7 @@ inputs.forEach((input) => {
 });
 
 
-solicitud.addEventListener('submit',(e) => {
+editarperfil.addEventListener('submit',(e) => {
     e.preventDefault();
 
     if(campos.nombre && campos.usuario && campos.password && campos.correo && campos.telefono ){
@@ -100,9 +103,9 @@ solicitud.addEventListener('submit',(e) => {
 
         }, 1500);
     } else {
-        document.getElementById('editperfil_mensaje').classList.add('editperfil_mensaje-activo');
+        document.getElementById('editperfil__mensaje').classList.add('editperfil__mensaje-activo');
         setTimeout(() => {
-            document.getElementById('editperfil_mensaje').classList.remove('editperfil_mensaje-activo');
+            document.getElementById('editperfil__mensaje').classList.remove('editperfil__mensaje-activo');
 
         }, 2000);
     }

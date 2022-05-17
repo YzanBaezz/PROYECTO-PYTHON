@@ -7,6 +7,12 @@ body{
     background: rgba(180, 175, 175, 0.504)!important;
 }
 
+.fondoletrasmenu{
+    color: #fff !important;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
 main{
     max-width: 800px;
     width: 90%;
@@ -58,19 +64,18 @@ main{
 }
 
 
-.editperfil_mensaje{
+.editperfil__mensaje{
     height: 45px;
-    line-height: 45px;
     background-color: rgb(189, 53, 53);
     padding: 0 15px;
     border-radius: 3px;
     display: none;  
 }
-.editperfil_mensaje-activo{
+.editperfil__mensaje-activo{
     display: block;
 
 }
-.editperfil_mensaje p{
+.editperfil__mensaje p{
     margin: 0;
 }
 
@@ -203,7 +208,7 @@ main{
     font-size: 15px;
 
 }
-@media screen and (max-width:821px){
+@media screen and (max-width:800px){
     .pie-pagina .grupo-1{
         width: 90%;
         grid-template-columns: repeat(1, 1fr);
@@ -212,3 +217,6 @@ main{
     }
     
 }
+
+
+
