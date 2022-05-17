@@ -128,7 +128,7 @@ def wrangler(request):
 # Administrador
 
 def admin(request):
-    return render(request, 'core/admin.html')
+    return render(request, 'core/Administrador.html')
 
 # Agregar Autos
 
