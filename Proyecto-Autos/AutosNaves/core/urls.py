@@ -1,6 +1,7 @@
+from unicodedata import name
 from django.contrib import admin
 from django.urls import path
-from .views import home, CHEVROLET, FORD, HYUNDAI, JEEP, mapa, Marcas, camaro, onix, sail, territory, focus, raptor, accent, tucson, veloster, cherokee, gladiator, wrangler, admin, AgregarAutos, Autos, Camionetas,InicioSesion, RegistroSesion, PerfilUsuario, AtencionCliente, EditarPerfil, AutosNuevos, AutosSemiNuevos
+from .views import home, CHEVROLET, FORD, HYUNDAI, JEEP, mapa, Marcas, camaro, onix, sail, territory, focus, raptor, accent, tucson, veloster, cherokee, gladiator, wrangler, admin, AgregarAutos, Autos, Camionetas,InicioSesion, RegistroSesion, PerfilUsuario, AtencionCliente, EditarPerfil, Catalogo
 
 
 urlpatterns = [
@@ -32,8 +33,6 @@ urlpatterns = [
     path('PerfilUsuario/', PerfilUsuario, name="PerfilUsuario"),
     path('AtencionCliente/', AtencionCliente, name="AtencionCliente"),
     path('EditarPerfil/', EditarPerfil, name="EditarPerfil"),
-    path('AutosNuevos/', AutosNuevos, name="AutosNuevos"),
-    path('AutosSemiNuevos/', AutosSemiNuevos, name="AutosSemiNuevos"),
-
+    path('Catalogo/', Catalogo, name= "Catalogo"),
 
 ]

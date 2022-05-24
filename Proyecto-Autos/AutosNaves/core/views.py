@@ -20,6 +20,9 @@ def PerfilUsuario(request):
 
     return render(request, 'core/PerfilUsuario.html')
 
+def Catalogo(request):
+     return render(request, 'core/Catalogo.html' )
+
 #-----------------------MARCAS-------------------------
 
 def Marcas(request):
