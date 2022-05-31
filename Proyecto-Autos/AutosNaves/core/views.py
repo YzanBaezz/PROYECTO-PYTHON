@@ -75,12 +75,6 @@ def mapa(request):
 
 #----------------------AUTOS Y CAMIONETAS ---------------
 
-#--Chevrolet--
-
-
-def Auto(request):
-
-    return render(request, 'core/Auto.html')
 
 
 # Administrador
@@ -108,9 +102,3 @@ def AtencionCliente(request):
 
 def EditarPerfil(request):
     return render(request, 'core/EditarPerfil.html')
-
-def AutosNuevos(request):
-    return render(request, 'core/AutosNuevos.html')
-
-def AutosSemiNuevos(request):
-    return render(request, 'core/AutosSemiNuevos.html')
