@@ -65,6 +65,15 @@ def Auto(request):
                 ,"videoA":"https://www.youtube.com/embed/0ZzMcwdb2W0"}
     return render(request,'core/Auto.html',contexto)
 
+def Au(request, id):
+    a = Auto.objects.get(idAuto = id)
+    contexto = {"x": a}
+    return render(request, 'core/Administrador.html',contexto)
+
+# Administrador
+
+def admin(request):
+    return render(request, 'core/Administrador.html')
 
 #-------------------------mapa-api------------------------
 
@@ -75,12 +84,6 @@ def mapa(request):
 
 #----------------------AUTOS Y CAMIONETAS ---------------
 
-
-
-# Administrador
-
-def admin(request):
-    return render(request, 'core/Administrador.html')
 
 # Agregar Autos
 
