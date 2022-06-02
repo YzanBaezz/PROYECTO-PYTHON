@@ -135,8 +135,8 @@ a:focus {
     width: 260px;
 	overflow:auto;
 	transition:all 0.3s ;
-    background: #FFFFFF;
     box-shadow: 0 10px 30px -12px rgb(0 0 0 / 42%), 0 4px 25px 0px rgb(0 0 0 / 12%), 0 8px 10px -5px rgb(0 0 0 / 20%);
+    background-color: #848979;
 }
 
 
@@ -163,8 +163,8 @@ a:focus {
 
 #sidebar .sidebar-header {
     padding:20px;
-	background-color:#ffffff;
-	border-bottom:1px solid #eee;
+	background-color:#848979;
+	border-bottom:1px solid #212529;
 }
 
 .sidebar-header h3{
@@ -187,7 +187,7 @@ a:focus {
 
 #sidebar ul li.active>a{
     color: #333;
-    background-color: rgba(200, 200, 200, 0.2);
+    background-color: rgb(213, 18, 18);
 }
 
 #sidebar ul li a:hover{
@@ -208,6 +208,7 @@ a:focus {
 
 #sidebar ul.components {    
     padding: 20px 0;
+    background-color: #848979;
 }
 
 #sidebar ul li a {
@@ -267,6 +268,7 @@ a:focus {
 	padding:10px 20px 0px 20px;
 	position: relative;
     width: 100%;
+    background-color: #848979;
 }
 
 
@@ -633,6 +635,7 @@ footer .copyright {
 	display:block;
 	visibility:visible;
 	z-index:15;
+    
 }
 
 
