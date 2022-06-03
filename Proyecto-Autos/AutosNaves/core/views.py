@@ -21,7 +21,7 @@ def PerfilUsuario(request):
     return render(request, 'core/PerfilUsuario.html')
 
 def Catalogo(request):
-     return render(request, 'core/Catalogo.html' )
+    return render(request, 'core/Catalogo.html' )
 
 #-----------------------MARCAS-------------------------
 
@@ -68,7 +68,7 @@ def Auto(request):
 def Au(request, id):
     a = Auto.objects.get(idAuto = id)
     contexto = {"x": a}
-    return render(request, 'core/Administrador.html',contexto)
+    return render(request, 'core/Auto.html',contexto)
 
 # Administrador
 
