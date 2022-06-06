@@ -1,4 +1,6 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
+from .forms import UserRegisterForm
+from django.contrib import messages
 
 # Create your views here.
 
@@ -6,6 +8,27 @@ def home(request):
 
     return render(request, 'core/pagina-home.html')
 
+def login(request):
+
+    return render(request, 'core/login.html')
+
+def registro(request):
+    if request.method == 'POST':
+        form = UserRegisterForm(request.POST)
+        if form.is_valid():
+            form.save()
+            username= form.cleaned_data['username']
+            messages.success(request, f'Usuario {username} creado')
+            return redirect('PerfilUsuario')
+    else:
+        form = UserRegisterForm()
+    
+    contexto = { 'form' : form }
+    return render(request, 'core/registro.html', contexto)
+
+def logout(request):
+
+    return render(request, 'core/logout.html')
 #---------------------INICIO/REGISTRO/PerfilUsuario-----------------
 
 def InicioSesion(request):

@@ -1,0 +1,14 @@
+{% extends 'core/PlantillaLogin.html' %}
+{% load static %}
+
+{% block content %}
+        <main>
+            <h2>Registro</h2>
+            <hr>
+            <form action="" method="post">
+                {% csrf_token %}
+                {{ form }}
+                <button type="submit" id="submit">Registrarse</button>
+            </form>
+        </main>
+{% endblock %}
