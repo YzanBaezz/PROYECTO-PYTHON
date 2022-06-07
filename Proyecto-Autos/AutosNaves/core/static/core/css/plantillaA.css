@@ -1,17 +1,23 @@
 body{
 	background: rgba(154, 150, 150, 0.729);
-	font-size: 62.5%;
 	font-family: 'Varela Round', Helvetica, Arial, serif;
 }
 
 main {
 
-    background: #fff;
+    background: #bc1823;
     max-width: 800px;
     width: 90%;
     margin: auto;
     padding: 20px;
-    
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+label{
+  margin-bottom: 5px;
+  color: #fff;
 }
 
 /* Global Styles*/
@@ -20,6 +26,10 @@ h5{
 	font-size: 1rem;
 	margin-bottom: 0;
 
+}
+
+h2{
+  color: #fff;
 }
 
 p{
@@ -32,36 +42,13 @@ button{
 	padding: 0.4rem 1.4rem;
 	border: none;
 	background: #7A9D96;
-	 border-radius: 4px;
+	border-radius: 4px;
 	cursor: pointer;
 
 }
 
 img{
 	object-fit: cover;
-}
-
-/* Nav bar */
-.main-head{
-	background: white;
-	color: black;
-}
-
-nav.main{
-	min-height: 7vh;
-	display: flex;
-	width: 65%;
-	margin: auto; 
-	align-items: center;
-	padding: 0.5rem;
-}
-
-nav.main ul{
-	display: flex;
-	flex: 1 1 40rem;
-	justify-content: space-around;
-	align-items: center;
-	list-style: none;
 }
 
 #logo{
@@ -91,49 +78,6 @@ nav.main ul{
     
 }
 
-
-.main{
-	background: white;
-	width: 60%;
-	margin: 5% auto;
-	border-radius: 4px;
-	padding-bottom: 20px;
-}
-
-/* NAVIGATION BAR */
-.second-nav{
-	display: flex;
-	padding: 15px 30px;
-}
-
-.second-nav .feed{
-	flex: 1 1 30px;
-}
-
-.second-nav .feed:hover{
-	flex: 1 1 30px;
-	color: grey;
-}
-
-.second-nav .profile{
-	flex: 1 1 30px;
-}
-
-.second-nav .profile:hover{
-	flex: 1 1 30px;
-	color: grey;
-}
-
-.second-nav .new{
-	flex: 6 1 5rem;
-	text-align: right;
-	text-transform: uppercase;
-  	color: #7A9D96;
-}
-
-.second-nav .new:hover{
-	color: grey;
-}
 
 /* Article */
 
@@ -176,37 +120,6 @@ time {
 	font-size: .94rem;
 }
 
-/* PROFILE */
-.profile{
-	display: flex;
-	align-items: center;
-	flex-direction: column;
-}
-
-.profile img{
-  height: 100px;
-  width: 100px;
-  margin-right: 10px;
-  border-radius: 50%;
-  margin: 20px;
-}
-.profile h2{
-	margin-top: -10px;
-	font-size: 1.3rem;
-}
-
-/* Followers / Following / Post */
-.follow{
-	display: flex;
-	width: 95%;
-	justify-content: space-around;
-	margin: 30px auto;
-	text-align: center;
-	border-bottom: 2px solid #ECEEEF;
-	padding-bottom: 20px;
-}
-
-
 /*Form Elements*/
 form {
     margin: 0;
@@ -216,16 +129,18 @@ form {
 input {
   width: 100%;
   border: 0;
-  border-bottom: 2px solid #D3D8DC;
+  border-radius: 10px;
+  border-bottom: 2px solid #000000;
   outline: 0;
   background: #fff;
   padding: 10px 0 10px;
   margin: 0 0 20 0;
-  color: #777B7E;
-
+  color: #000000;
+  padding: 5px;
+  
 }
 input:focus {
-  border-color: #7A9D96;
+  border-color: #000000;
   color: #2C3238;
 }
 textarea {
@@ -246,7 +161,7 @@ button#submit {
   width: 100%;
   padding: 20px 0;
   text-align: center;
-  background: #7A9D96;
+  background: #000000;
   color: #fff;
   border: 0;
   border-radius: 4px;
@@ -277,23 +192,6 @@ button#submit:hover {
   margin-bottom: 20px;
 }
 
-
-/*Footer*/
-footer{
-  color: white;
-  text-align: center;
-  font-size: .875em;
-  margin: 40px 0;
-}
-
-footer p {
-  opacity: .8;
-}
-
-footer p a {
-  color: white;
-}
-
 img.profile{
   height: 80px;
   width: 80px;
@@ -307,15 +205,21 @@ img.profile{
   color: white;
 }
 
-/*Media Queries*/
-@media (max-width: 786px) {
-  .main {
-    width: 95%;
-  }
 
-}
+
 .fondoletrasmenu{
     color: #fff !important;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: medium;
+}
+
+.centrado{
+  text-align: center;
+}
+
+.imagen-fluid{
+  width: 50%;
+  display: flex;
+  margin: auto;
+  border-radius: 20px;
 }

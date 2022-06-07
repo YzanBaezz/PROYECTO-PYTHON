@@ -21,50 +21,40 @@
 
 <script src="https://kit.fontawesome.com/d1560c34b9.js" crossorigin="anonymous"></script>
 
+
 <link rel="stylesheet" type="text/css" href="{% static 'core/css/plantillaA.css' %}">
 <link rel="stylesheet" type="text/css" href="{% static 'core/css/plantillaA1.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'core/css/plantillaF.css' %}">
 </head>
 <body>
 
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
     <div class="container-fluid">
-        <a class="navbar-brand" href="http://127.0.0.1:8000"><img src="{% static 'core/img/LOGO/LogoChico.png' %}" alt="Avatar Logo" class="rounded-pill"></a>
+        <a class="navbar-brand" href="{% url 'home' %}"><img src="{% static 'core/img/LOGO/LogoChico.png' %}" alt="Avatar Logo" class="rounded-pill"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
             <span class="navbar-toggler-icon"></span>
         </button>
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
         <ul class="navbar-nav">
         <li class="nav-item">
-            <a class="nav-link fondoletrasmenu" href="http://127.0.0.1:8000/AutosNuevos/">Autos Nuevos</a>
+            <a class="nav-link fondoletrasmenu" href="{% url 'Catalogo' %}">Catalogo</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link fondoletrasmenu" href="http://127.0.0.1:8000/AutosSemiNuevos/">Autos Semi-Nuevos</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link fondoletrasmenu" href="http://127.0.0.1:8000/Marcas/">Marcas Disponibles</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link fondoletrasmenu" href="http://127.0.0.1:8000/AtencionCliente/">Atencion al Cliente</a>
-        </li>    
-        <li class="nav-item dropdown fondoletrasmenu">
-            <a class="nav-link dropdown-toggle fondoletrasmenu" href="#" role="button" data-bs-toggle="dropdown">Tipos</a>
-            <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="http://127.0.0.1:8000/Autos/">Autos</a></li>
-            <li><a class="dropdown-item" href="http://127.0.0.1:8000/Camionetas/">Camionetas </a></li>  
-            </ul>
+            <a class="nav-link fondoletrasmenu" href="{% url 'Catalogo' %}">Marcas Disponibles</a>
         </li>
         <li class="nav-item dropdown ">
             <a class="nav-link dropdown-toggle fondoletrasmenu" href="#" role="button" data-bs-toggle="dropdown">Cuenta</a>
             <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="http://127.0.0.1:8000/registro/">Registro</a></li>
-            <li><a class="dropdown-item" href="http://127.0.0.1:8000/login/">Inicio Sesión </a></li>
-            <li><a class="dropdown-item" href="http://127.0.0.1:8000/logout/">Logout </a></li>  
+            <li><a class="dropdown-item" href="{% url 'registro' %}">Registro</a></li>
+            <li><a class="dropdown-item" href="{% url 'login' %}">Inicio Sesión </a></li>
+            <li><a class="dropdown-item" href="{% url 'logout' %}">Logout </a></li>  
             </ul>
         </li>
         </ul>
     </div>
     </div>
 </nav>
+
 
     {% if messages %}
         {% for message in messages %}
@@ -74,12 +64,50 @@
         {% endfor %}
     {% endif %}
 
-    {% block content %}
+{% block content %}
+{% csrf_token %}
 
-    {% endblock %}
+{% endblock %}
 
 
-
+<!-- footer -->
+<footer class="pie-pagina">
+    <div class="grupo-1">
+      <div class="box">
+        <figure>
+          <a href="{% url 'home' %}">
+            <img src="{% static 'core/img/LOGO/Logocompania.png' %}" alt="LOGO" class="img-fluid">
+          </a>
+        </figure>
+      </div>
+      <div class="box">
+        <h2>SOBRE NOSOTROS</h2>
+        <p> -Autos Nuevos y Usados</p>
+        <p> -Atencion Al Cliente</p>
+        <p> -Contactanos: <br> +56966263113</p>
+      </div>
+        
+      <div class="box">
+        <h2>Nuestras redes sociales:</h2>
+        <div class="red-social">
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="https://www.instagram.com/bnja.cth/" class="fa fa-instagram"></a>
+          <a href="#" class="fa fa-twitter"></a>
+        </div>
+  
+        <div class="box">
+          <h2>Donde encontrarnos:</h2>
+          <div class="ubicacion-local">
+            <a href="{% url 'home' %}" class="fa-solid fa-location-dot"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="grupo-2">
+      <small>&copy; 2022 <b>Autos Naves</b> - Todos los derechos reservados</small>
+  
+    </div>
+  </footer>
 
 
 
